@@ -1,0 +1,425 @@
+/*  Name: Joyce Do
+    Date: Nov 3, 2022
+    Filename: styles.css
+    Assignment: Live Bait
+*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+
+/* browser resets */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* logo */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+
+}
+
+
+/* contact/map */
+
+.location {
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: x-large;
+    color: #b5b682;
+    font-family: 'Antonio', sans-serif;
+    padding: 0%;
+
+}
+
+.socialmedia {
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    font-size: x-large;
+    color: #b5b682;
+    font-family: 'Antonio', sans-serif;
+    padding: 0%;
+}
+
+.fa-solid {
+    color: #b5b682;
+}
+
+.fa-brands {
+    color: #b5b682;
+}
+
+/* navigation */
+nav {
+    background-color: #033F63;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.a-nav {
+    text-decoration: none;
+    color: white;
+    padding: 3em;
+    font-family: 'Antonio', sans-serif;
+    font-size: x-large;
+}
+
+a:hover {
+    color: #7C9885;
+}
+
+/*front page image*/
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    font-size: 6em;
+    font-family: 'Antonio', sans-serif;
+}
+
+.button {
+    position: absolute;
+    bottom: 35%;
+    left: 30px;
+    font-size: 4em;
+    text-decoration: none;
+    border-radius: 0px;
+    background-color: #FDC85D;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    font-family: 'Antonio', sans-serif;
+}
+
+.button:hover {
+    background-color: #033F63;
+}
+
+.homepage {
+    margin: auto;
+}
+
+.img1, .img2, .img3, .img4 {
+    border-style: solid;
+    border-width: 6px;
+    border-color: #28666e;
+}
+
+/*products page*/
+h2 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 0%;
+    font-family: 'Antonio', sans-serif;
+    background-color: #b5b682;
+}
+
+.notice2 {
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: 'Antonio', sans-serif;
+    color: #28666e;
+    background-color: #b5b682;
+}
+
+h3 {
+    font-size: xx-large;
+    padding-left: 5%;
+    font-family: 'Antonio', sans-serif;
+    font-weight: bolder;
+    padding-top: 2em;
+}
+
+mark {
+    background-color: #28666e;
+    padding: 0.5em;
+    color: white;
+}
+
+figure {
+    display: inline-block;
+    padding: 2em;
+    padding-left: 5%;
+}
+
+figcaption {
+    font-family: 'Antonio', sans-serif;
+    font-size: large;
+}
+
+/* services page */
+.serviceimg {
+    padding: 2em;
+    float: left;
+    padding-left: 15%;
+}
+
+.serviceimg2 {
+    padding-left: 5%;
+}
+
+.servicep {
+    font-family: 'Antonio', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    padding-top: 30px;
+    color: #28666e;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #033F63;
+    padding: 2em;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    position: static;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin-top: 20px;
+    clear: both;
+}
+
+/* responsive design */
+@media screen and (min-width: 500px) {
+
+    /* contacts at top of page */
+    .location {
+        display: none;
+    }
+
+    .socialmedia {
+        display: none;
+    }
+
+    .icon-1 {
+        display: block;
+        font-size: x-large;
+        text-align: left;
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        padding: 0%;
+    }
+
+    .icon-2 {
+        display: block;
+        font-size: x-large;
+        text-align: right;
+        position: absolute;
+        top: 3%;
+        right: 15%;
+        padding: 0%;
+    }
+
+    /* navigation */
+    nav {
+        background-color: #033F63;
+        text-align: center;
+        font-size: large;
+        padding: 0.5em;
+        color: white;
+        display: block;
+    }
+
+    .a-nav {
+        text-decoration: none;
+        color: white;
+        padding: 1em;
+        font-size: large;
+    }
+
+    /* text on image */
+    .top-left {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /* pictures on homepage */
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 430px;
+
+    }
+
+    /* services page */
+    .serviceimg {
+        display: none;
+    }
+
+    .serviceimg2 {
+        display: block;
+    }
+
+    .servicep {
+        font-size: large;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (min-width: 730px) {
+
+    /* contacts at top of page */
+    .location {
+        text-align: left;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        font-size: 20px;
+        display: block;
+
+    }
+
+    .socialmedia {
+        text-align: right;
+        position: absolute;
+        top: 5%;
+        right: 15%;
+        font-size: 20px;
+        display: block;
+    }
+
+    .icon-1 {
+        display: none;
+    }
+
+    .icon-2 {
+        display: none;
+    }
+
+    /* navigation bar */
+    nav {
+        padding: 1em;
+    }
+
+    .a-nav {
+        padding: 3em;
+        font-size: large;
+    }
+
+    /* text on image */
+    .top-left {
+        font-size: 4em;
+    }
+
+    .button {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    /* pictures on homepage */
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 600px;
+
+    }
+
+    /* services page */
+    .serviceimg {
+        display: none;
+    }
+
+    .serviceimg2 {
+        display: block;
+    }
+
+    .servicep {
+        font-size: large;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (min-width: 1099px) {
+
+    /* contacts at top of page */
+    .location {
+        text-align: left;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        font-size: x-large;
+        display: block;
+
+    }
+
+    .socialmedia {
+        text-align: right;
+        position: absolute;
+        top: 10%;
+        right: 15%;
+        font-size: x-large;
+        display: block;
+    }
+
+    .icon-1 {
+        display: none;
+    }
+
+    .icon-2 {
+        display: none;
+    }
+
+    /* navigation */
+    nav {
+        padding: 1em;
+    }
+
+    .a-nav {
+        padding: 3em;
+        font-size: x-large;
+    }
+
+    /* text on image */
+    .top-left {
+        font-size: 6em;
+    }
+
+    .button {
+        font-size: 4em;
+    }
+
+    /* services page */
+    .serviceimg {
+        display: inline-block;
+    }
+
+    .serviceimg2 {
+        display: none;
+    }
+
+    .servicep {
+        font-size: x-large;
+    }
+}
